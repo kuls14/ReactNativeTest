@@ -1,0 +1,19 @@
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Text, View } from 'react-native';
+import styles from './style';
+
+const {{pascalCase screen}}ListItem = ({ row, actionOnRow }) => {
+  return (
+    <View style={styles.container}>
+      <Text>{{pascalCase screen}}</Text>
+    </View>
+  );
+};
+
+export default {{pascalCase screen}}ListItem;
+
+{{pascalCase screen}}ListItem.propTypes = {
+  row: PropTypes.object,
+  actionOnRow: PropTypes.func,
+};

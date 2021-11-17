@@ -1,0 +1,17 @@
+import { call, put } from 'redux-saga/effects';
+import {{pascalCase name}}Actions from '../redux/{{pascalCase name}}Redux';
+import { getError } from '../services/Utils';
+
+function* handleResponse(response) {
+  if (response?.status === 200) {
+    yield put({{pascalCase name}}Actions.success({ ...response.data.data }));
+  } else {
+    const error = yield call(getError, response);
+    yield put({{pascalCase name}}Actions.failure(error));
+  }
+}
+
+export function* {{camelCase name}}(api, action) {
+  const response = yield call(api.{{camelCase name}}, action.payload);
+  yield* handleResponse(response);
+}

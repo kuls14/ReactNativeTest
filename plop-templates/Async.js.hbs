@@ -1,0 +1,10 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { AsyncKeys } from '../constants';
+
+export const set{{pascalCase name}} = (data) => {
+  AsyncStorage.setItem(AsyncKeys.{{name}}, JSON.stringify((data));
+};
+
+export const get{{pascalCase name}} = async () => {
+  return await AsyncStorage.getItem(AsyncKeys.{{name}});
+};

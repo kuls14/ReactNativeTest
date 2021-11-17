@@ -1,0 +1,18 @@
+import React from 'react';
+import { View } from 'react-native';
+import { Container, Content } from 'native-base';
+import { CustomHeader } from '../../components';
+import styles from '../styles/{{pascalCase screen}}s';
+
+type {{pascalCase screen}}ScreenPropType = {};
+
+const {{pascalCase screen}}Screen = ({}: {{pascalCase screen}}ScreenPropType) => {
+  return (
+    <Container style={styles.container}>
+      <CustomHeader title={{screen}} />
+      <Content></Content>
+    </Container>
+  );
+};
+
+export default {{pascalCase screen}}Screen;

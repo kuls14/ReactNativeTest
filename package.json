@@ -1,0 +1,57 @@
+{
+  "name": "ReactNativeTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ./src",
+    "fixCode": "eslint --fix ./src",
+    "pod": "cd ios && pod install && cd ..",
+    "prettier": "prettier --write '**/*.{ts,js,css,html}'",
+    "generate": "plop"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.11",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
+    "apisauce": "^2.1.2",
+    "immer": "^9.0.6",
+    "moment": "^2.29.1",
+    "native-base": "2.15.0",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.1",
+    "react": "17.0.2",
+    "react-native": "0.66.3",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-map-clustering": "^3.4.2",
+    "react-native-map-link": "^2.8.1",
+    "react-native-maps": "^0.29.4",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.9.0",
+    "react-native-simple-shadow-view": "^1.6.3",
+    "react-native-svg": "^12.1.1",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "reduxsauce": "^1.2.1",
+    "seamless-immutable": "^7.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.2.0",
+    "jest": "^27.3.1",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "plop": "^2.7.6",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
